@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     <link rel="stylesheet" href="style.scss">
+    </head>
+    <body>
+        <div class="printarea">
+            <div class="header">
+                <p><strong>LIBRARY DEPARTMENT</strong></p>
+                <p>Holy Angel University</p>
+                <p>Angeles City</p>
+            </div>  
+            <br/>
+            <br/>
+            <p><strong>INSTRUCTIONAL MEDIA CENTER</strong></p>
+            <p><strong>REQUEST FOR USE OF EQUIPMENT</strong></p>
+            <p>Date Filed:</p> left
+            <p>ACTIVITY/PURPOSE: </p>
+            <p>DATE & TIME OF ACTIVITY: </p>
+            
+            <table>
+                <tr>
+                    <th>AV EQUIPTMENT</th>
+                </tr>
+<?php
+
+$name = $_GET['equiptment'];
+
+if (isset($_GET['equiptment'])) {
+    echo "You chose the following color(s): <br>";
+    echo "<tr>";
+    foreach ($name as $equiptment){
+        echo "<td>" .$equipment."</td>";
+    }
+    echo "</tr>";
+} else {
+    echo "You did not choose a equiptment.";
+}
+
+?>
+            </table>
+            
+            <p><strong>REQUESTED BY</strong></p>
+            <p>NAME OF BORROWER:</p>
+            <p>Signature:___________</p>
+            
+        </div>
+    </body>
+</html>

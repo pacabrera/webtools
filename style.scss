@@ -1,0 +1,189 @@
+$color_1: #831515;
+$color_2: #670A0A;
+$color_3: #fff;
+$color_4: #D2E2FF;
+$font_family_1: Georgia, "Times New Roman", Times, serif;
+$font_family_2: Arial, Helvetica, sans-serif;
+$background_color_1: #F8F2E5;
+$background_color_2: #831515;
+
+@mixin right{
+  text-align: right;
+}
+@mixin center{
+   
+    text-align: center;
+}
+@mixin inlineb{
+  display: inline;
+  padding-right: 65%;
+}
+@mixin formdesign {
+box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		width: 100%;
+		display: block;
+		outline: none;
+		border: none;
+		height: 25px;
+		line-height: 25px;
+		font-size: 16px;
+		padding: 0;
+		font-family: $font_family_1;
+}
+
+
+table {
+	border-collapse: collapse;
+	border: 1px solid black;
+	padding: 5px;
+}
+td {
+	border: 1px solid black;
+	padding: 5px;
+}
+th {
+	border: 1px solid black;
+	padding: 5px;
+}
+body {
+	float: center;
+	margin: 0 auto;
+	background-color: $background_color_1;
+}
+.container {
+	border-radius: 5px;
+	background-color: $background_color_2;
+	padding: 20px;
+	width: 30%;
+	float: center;
+	margin: 0 auto;
+}
+h3 {
+	text-decoration: underline;
+	text-align: center;
+}
+h4 {
+	text-align: center;
+}
+.form-style-7 {
+	max-width: 400px;
+	margin: 50px auto;
+	background: #fff;
+	border-radius: 2px;
+	padding: 20px;
+	font-family: $font_family_1;
+	h1 {
+		display: block;
+		text-align: center;
+		padding: 0;
+		margin: 0px 0px 20px 0px;
+		color: $color_1;
+		font-size: x-large;
+	}
+	ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+	li {
+		display: block;
+		padding: 9px;
+		border: 1px solid #670A0A;
+		margin-bottom: 30px;
+		border-radius: 3px;
+		&:last-child {
+			border: none;
+			margin-bottom: 0px;
+			text-align: center;
+		}
+		>label {
+			display: block;
+			float: left;
+			margin-top: -19px;
+			background: #FFFFFF;
+			height: 14px;
+			padding: 2px 5px 2px 5px;
+			color: $color_2;
+			font-size: 14px;
+			overflow: hidden;
+			font-family: $font_family_2;
+		}
+		>span {
+			background: #831515;
+			display: block;
+			padding: 3px;
+			margin: 0 -9px -9px -9px;
+			text-align: center;
+			color: $color_3;
+			font-family: $font_family_2;
+			font-size: 11px;
+		}
+	}
+	input[type="text"] {
+		 @include formdesign;
+	}
+	input[type="date"] {
+		 @include formdesign;
+	}
+	input[type="datetime"] {
+		 @include formdesign;
+	}
+	input[type="email"] {
+		 @include formdesign;
+	}
+	input[type="number"] {
+		 @include formdesign;
+	}
+	input[type="search"] {
+		 @include formdesign;
+	}
+	input[type="time"] {
+		 @include formdesign;
+	}
+	input[type="url"] {
+		 @include formdesign;
+	}
+	input[type="password"] {
+		 @include formdesign;
+	}
+    input[type="datetime-local"] {
+		 @include formdesign;
+	}
+	textarea {
+		 @include formdesign;
+	}
+	select {
+		 @include formdesign;
+	}
+	input[type="submit"] {
+		 @include formdesign;
+		}
+	}
+	input[type="button"] {
+		background: $color_1;
+		border: none;
+		padding: 10px 20px 10px 20px;
+		border-bottom: 3px solid $color_2;
+		border-radius: 3px;
+		color: $color_4;
+		&:hover {
+			background: $color_1;
+			color: $color_3;
+		}
+	}
+
+.header {
+    @include center;
+}
+.printarea{
+    background-color: white;
+    padding: 20px;
+}
+.left {
+  @include right;
+}
+.inline {
+  @include inlineb;
+}
